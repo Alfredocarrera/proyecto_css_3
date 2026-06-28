@@ -73,7 +73,7 @@ table {
         tr:nth-child(even) {
             background-color: #f8f9fa;
         }
-        tr:hover { <!-- este comando de css lo utilice para cambiar el diseño de la fila al pasar el mouse por encima  se divide en tr apunta a las filas :hover es una pseudo-clase que se activa cuando el puntero del mouse está sobre la fila-->
+        tr:hover { /* este comando de css lo utilice para cambiar el diseño de la fila al pasar el mouse por encima. tr apunta a las filas; :hover es una pseudo-clase que se activa cuando el puntero del mouse está sobre la fila. */
             background-color: #f1f3f5;
         }
         img {
