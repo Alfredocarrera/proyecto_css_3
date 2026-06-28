@@ -1,4 +1,15 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Orbitron:wght@400..900&display=swap');
+body
+{ 
+/* Gradiente Lineal Tecnológico (Va desde un azul oscuro hasta un tono casi negro) */
+  background: linear-gradient(135deg, #6782b4 0%, #2a5298 50%, #0f2027 100%);
+  
+  /* Asegura que el gradiente cubra toda la pantalla aunque haya poco contenido */
+  min-height: 100vh;
+  margin: 0;
+  
+}
+
 .encabezado 
 {
   font-family: "Orbitron", sans-serif;
@@ -9,9 +20,13 @@
   font-weight: 600;
   text-align: center;
   letter-spacing: 0px;
-  text-decoration:underline; 
+  text-decoration:underline;
 }
 
+.noticia
+{
+    color: #e9edf0;
+}
 .noticias-header 
 {
   font-family: "Inter", sans-serif;
@@ -131,33 +146,155 @@ img
   padding: 15px;
   border-radius: 10px;
   font-family: "inter",sans-serif;
-  color: #333;
+  color: #130707;
 }
 
 .caja 
 {
     width: 400px;
-    background-color: #ffffff;
-    border: 2px solid #34495e;
+    background-color: #aa8b8b;
+    border: 6px solid #34495e;
     padding: 15px;
     margin-bottom: 30px;
     border-radius: 6px;
+    color: #333;
 }
 
 /* Primera Caja: Comportamiento por defecto */
 .caja-normal 
 {
     white-space: normal;
+    color: #301c1c;
+    font-size: 26px;
 }
 
 /* Segunda Caja: Respeta el formato del editor */
 .caja-pre 
 {
     white-space: pre;
+    color: #301c1c;
+    font-size: 26px;
+}
+
+
+.titulo-wp 
+{
+    margin-top: 0;
+    color: #516c86;
+    font-size: 20px;
+}
+
+h2
+{
+    color: #1a5276;
+    border-bottom: 2px solid #2980b9;
+    padding-bottom: 10px;
+}
+
+table
+{
+    width: 100%;
+    border-collapse: collapse;
+    background-color: #ffffff;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    margin-top: 20px;
+}
+
+th 
+{
+    background-color: #2980b9;
+    color: white;
+    padding: 15px;
+    text-transform: uppercase;
+    font-size: 14px;
+    letter-spacing: 0.5px;
+}
+
+td 
+{
+    border: 2px solid #bdc3c7;
+    padding: 15px;
+    height: 180px; /* Altura suficiente para notar el vertical-align */
+    width: 33.33%;
+}
+
+/* CLASES DE ALINEACIÓN VERTICAL */
+.alinear-top 
+{
+    vertical-align: top;
+    background-color: #ebf5fb;
+}
+
+.alinear-middle 
+{
+    vertical-align: middle;
+    background-color: #fef9e7;
+}
+
+.alinear-bottom 
+{
+    vertical-align: bottom;
+    background-color: #f9ebea;
+}
+
+.badge 
+{
+    display: inline-block;
+    padding: 4px 8px;
+    background-color: #34495e;
+    color: white;
+    border-radius: 4px;
+    font-weight: bold;
+    font-size: 12px;
+    margin-bottom: 10px;
 }
 
 h3 
 {
-    margin-top: 0;
+    margin: 0 0 8px 0;
     color: #2c3e50;
+    font-size: 16px;
+}
+
+p 
+{
+    margin: 0;
+    color: #555;
+    font-size: 14px;
+    line-height: 1.4;
+}
+
+h2 
+{
+    color: #2c3e50;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+/* ESTILO DE LAS CAJAS */
+.caja-redes 
+{
+    background-color: #ffffff;
+    border-left: 15px solid #e74c3c; /* Borde rojo para simular alerta de interferencia */
+    padding: 20px;
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 4px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+      
+    /* Requerimiento de márgenes */
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+.caja-redes-h3 {
+      margin-top: 0;
+      color: #c0392b;
+    }
+
+.caja-redesp 
+{
+    color: #34495e;
+    line-height: 1.5;
 }
