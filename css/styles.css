@@ -52,38 +52,69 @@
     margin-bottom: 20px;
 }
 
-table {
-            width: 100%;
-            border-collapse: collapse;
-            background-color: #ffffff;
-            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
-            border-radius: 8px;
-            overflow: hidden;
-        }
-        th, td {
-            padding: 12px 15px;
-            text-align: left;
-        }
-        th {
-            background-color: #0070c0;
-            color: white;
-            text-transform: uppercase;
-            font-size: 14px;
-        }
-        tr:nth-child(even) {
-            background-color: #f8f9fa;
-        }
-        tr:hover { /* este comando de css lo utilice para cambiar el diseño de la fila al pasar el mouse por encima. tr apunta a las filas; :hover es una pseudo-clase que se activa cuando el puntero del mouse está sobre la fila. */
-            background-color: #f1f3f5;
-        }
-        img {
-            width: 120px;
-            height: auto;
-            border-radius: 4px;
-            display: block;
-        }
-        .date {
-            white-space: nowrap;
-            font-weight: bold;
-            color: #495057;
-        }
+table 
+{
+    width: 100%;
+    border-collapse:separate;
+    background-color: #b69898;
+    box-shadow: 0 4px 8px rgba(3, 3, 3, 0.1);
+    border-radius: 8px;
+    overflow: hidden;
+}
+th, td 
+{
+    padding: 12px 15px;
+    text-align: left;
+}
+        
+th 
+{
+    background-color: #0070c0;
+    color: white;
+    text-transform: uppercase;
+    font-size: 14px;
+}
+
+tr:nth-child(even) 
+{
+    background-color: #7b98b6;
+}
+        
+tr:hover 
+{ /* este comando de css lo utilice para cambiar el diseño de la fila al pasar el mouse por encima. tr apunta a las filas; :hover es una pseudo-clase que se activa cuando el puntero del mouse está sobre la fila. */
+    background-color: #345f8a;
+}
+        
+img 
+{
+    width: 120px;
+    height: auto;
+    border-radius: 4px;
+    display: block;
+}
+
+.date 
+{
+    white-space: nowrap;
+    font-weight: bold;
+     color: #495057;
+}
+
+.dato-curioso {
+  /* 1. EL CONTENIDO: Se definio un ancho máximo y color de texto */
+  max-width: 400px;
+  color: #2c3e50;
+  background-color: #ecf0f1; /* Fondo gris claro para ver dónde termina el contenido */
+
+  /* 2. PADDING: El espacio entre el texto y el borde */
+  padding: 25px;
+
+  /* 3. BORDER: Estilo de línea doble y bordes redondeados */
+  border-width: 10px;
+  border-style: double; /* Estilo diferente (línea doble) */
+  border-color: #3498db; /* Color azul */
+  border-radius: 15px;  /* Bordes redondeados */
+
+  /* 4. MARGIN: Espacio por fuera del borde para separarlo de otros elementos */
+  margin: 40px auto; 
+}
