@@ -118,3 +118,18 @@ img
   /* 4. MARGIN: Espacio por fuera del borde para separarlo de otros elementos */
   margin: 40px auto; 
 }
+
+.caja-contenedor 
+{
+  /* Características solicitadas */
+  width: 300px;
+  height: 150px;
+  overflow: auto; /* Agrega barras de scroll si el texto se desborda de los margenes */
+  /* Estilos visuales para que notes dónde termina la caja */
+  background-color: #f4f6f7;
+  border: 6px solid #2c3e50;
+  padding: 15px;
+  border-radius: 10px;
+  font-family: "inter",sans-serif;
+  color: #333;
+}
