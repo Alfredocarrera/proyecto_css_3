@@ -187,7 +187,7 @@
         </p>
     </section>
 
-    <h2>Demostración de la propiedad <code>white-space</code></h2>
+    <h2 id="titulo-wp">Demostración de la propiedad <code>white-space</code></h2>
 
     <section class="caja caja-normal">
         <strong>Caja 1 (white-space: normal):</strong>
@@ -201,6 +201,54 @@
         Este es un texto de prueba que tiene
         tres saltos de línea manuales
         y contiene varios      espacios seguidos en esta parte para ver cómo reacciona el navegador web.
+    </section>
+    <section class="caja caja-nowrap"> 
+        <h2>Configuración y Conceptos de Enlaces Troncales (Trunking)</h2>
+        <table>
+            <thead>
+            <tr>
+                <th>Definición (Alineado Arriba)</th>
+                <th>Protocolo 802.1Q (Alineado al Centro)</th>
+                <th>VLAN Nativa (Alineado Abajo)</th>
+            </tr>
+            </thead>
+            <tbody>
+            <tr>
+                <td class="alinear-top">
+                <div class="badge">vertical-align: top;</div>
+                <h3>¿Qué es un Enlace Troncal?</h3>
+                <p>Es un enlace físico o lógico que interconecta dos switches Cisco (o un switch y un router) para transportar el tráfico de múltiples VLANs a través de un solo cable, optimizando los puertos físicos de la red.</p>
+                </td>
+
+                <td class="alinear-middle">
+                <div class="badge">vertical-align: middle;</div>
+                <h3>Etiquetado de Tramas</h3>
+                <p>El protocolo estándar de la industria es IEEE 802.1Q. Este protocolo añade una etiqueta (tag) de 4 bytes a la trama Ethernet original para identificar a qué VLAN específica pertenece cada paquete de datos mientras cruza el enlace.</p>
+                </td>
+
+                <td class="alinear-bottom">
+                <div class="badge">vertical-align: bottom;</div>
+                <h3>Consideración de Seguridad</h3>
+                <p>Por defecto, las tramas de la VLAN nativa (usualmente la VLAN 1) viajan por el enlace troncal sin ninguna etiqueta. Como buena práctica en equipos Cisco, se recomienda cambiar la VLAN nativa por otra que no esté en uso para mitigar ataques como el VLAN Hopping.</p>
+                </td>
+            </tr>
+            </tbody>
+        </table>
+    </section>
+        <h2>Interferencia en Medios de Transmisión Cobre (UTP)</h2>
+
+    <section class="caja-redes">
+        <h3>1. Diafonía (Crosstalk)</h3>
+        <p>
+         La diafonía es la perturbación electromagnética que ocurre cuando las señales de un par de hilos de cobre se acoplan o inducen de forma no deseada en los hilos vecinos. Al viajar corriente por un hilo, este genera un pequeño campo magnético que actúa como una antena emisora, provocando ruido, distorsión y pérdida de datos en los hilos de al lado.
+        </p>
+    </section>
+
+    <section class="caja-redes">
+        <h3>2. Paradiafonía (NEXT - Near-End Crosstalk)</h3>
+        <p>
+         La paradiafonía es un tipo específico de diafonía que se mide en el **extremo cercano** de la transmisión (es decir, del mismo lado del switch o dispositivo que está enviando la señal). Ocurre cuando la señal de transmisión de alta potencia que sale de un hilo interfiere directamente con la señal débil de recepción que entra por el hilo adyacente en el mismo conector RJ-45.
+        </p>
     </section>
 
 </body>
