@@ -133,3 +133,31 @@ img
   font-family: "inter",sans-serif;
   color: #333;
 }
+
+.caja 
+{
+    width: 400px;
+    background-color: #ffffff;
+    border: 2px solid #34495e;
+    padding: 15px;
+    margin-bottom: 30px;
+    border-radius: 6px;
+}
+
+/* Primera Caja: Comportamiento por defecto */
+.caja-normal 
+{
+    white-space: normal;
+}
+
+/* Segunda Caja: Respeta el formato del editor */
+.caja-pre 
+{
+    white-space: pre;
+}
+
+h3 
+{
+    margin-top: 0;
+    color: #2c3e50;
+}
